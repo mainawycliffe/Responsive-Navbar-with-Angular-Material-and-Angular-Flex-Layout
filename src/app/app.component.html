@@ -12,14 +12,14 @@
       <a href="#" mat-button>Menu Item 6</a>
     </div>
     <div fxShow="true" fxHide.gt-sm="true">
-      <a href="#" (click)="sidenav.open()">Show Side Menu</a>
+      <a href="#" (click)="sidenav.toggle()">Show Side Menu</a>
     </div>
   </mat-toolbar>
 
   <mat-sidenav-container fxFlexFill class="example-container">
     <mat-sidenav #sidenav fxLayout="column">
       <div fxLayout="column">
-        <a (click)="sidenav.close()" href="#" mat-button>Close</a>
+        <a (click)="sidenav.toggle()" href="#" mat-button>Close</a>
         <a href="#" mat-button>Menu Item 1</a>
         <a href="#" mat-button>Menu Item 2</a>
         <a href="#" mat-button>Menu Item 3</a>
