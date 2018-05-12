@@ -1,32 +1,34 @@
 <div style="height: 100vh;">
   <mat-toolbar color="primary">
-    <span>Responsive Navigation</span>
-    <span class="example-spacer"></span>
-    <div fxShow="true" fxHide.lt-md="true">
-      <!-- The following menu items will be hidden on both SM and XS screen sizes -->
-      <a href="#" mat-button>Menu Item 1</a>
-      <a href="#" mat-button>Menu Item 2</a>
-      <a href="#" mat-button>Menu Item 3</a>
-      <a href="#" mat-button>Menu Item 4</a>
-      <a href="#" mat-button>Menu Item 5</a>
-      <a href="#" mat-button>Menu Item 6</a>
-    </div>
-    <div fxShow="true" fxHide.gt-sm="true">
-      <a href="#" (click)="sidenav.toggle()">Show Side Menu</a>
-    </div>
+    <mat-toolbar-row>
+        <button mat-icon-button (click)="sidenav.toggle()" fxShow="true" fxHide.gt-sm>
+          <mat-icon>menu</mat-icon>
+        </button>
+        <span>Responsive Navigation</span>
+        <span class="example-spacer"></span>
+        <div fxShow="true" fxHide.lt-md="true">
+          <!-- The following menu items will be hidden on both SM and XS screen sizes -->
+          <a href="#" mat-button>Menu Item 1</a>
+          <a href="#" mat-button>Menu Item 2</a>
+          <a href="#" mat-button>Menu Item 3</a>
+          <a href="#" mat-button>Menu Item 4</a>
+          <a href="#" mat-button>Menu Item 5</a>
+          <a href="#" mat-button>Menu Item 6</a>
+        </div>
+    </mat-toolbar-row>
   </mat-toolbar>
 
-  <mat-sidenav-container fxFlexFill class="example-container">
-    <mat-sidenav #sidenav fxLayout="column">
-      <div fxLayout="column">
-        <a (click)="sidenav.toggle()" href="#" mat-button>Close</a>
-        <a href="#" mat-button>Menu Item 1</a>
-        <a href="#" mat-button>Menu Item 2</a>
-        <a href="#" mat-button>Menu Item 3</a>
-        <a href="#" mat-button>Menu Item 4</a>
-        <a href="#" mat-button>Menu Item 5</a>
-        <a href="#" mat-button>Menu Item 6</a>
-      </div>
+  <mat-sidenav-container fxFlexFill>
+    <mat-sidenav #sidenav>
+      <mat-nav-list>
+        <a (click)="sidenav.toggle()" mat-list-item>Close</a>
+        <a href="#" mat-list-item>Menu Item 1</a>
+        <a href="#" mat-list-item>Menu Item 2</a>
+        <a href="#" mat-list-item>Menu Item 3</a>
+        <a href="#" mat-list-item>Menu Item 4</a>
+        <a href="#" mat-list-item>Menu Item 5</a>
+        <a href="#"mat-list-item>Menu Item 6</a>
+      </mat-nav-list>
     </mat-sidenav>
     <mat-sidenav-content fxFlexFill>Main content</mat-sidenav-content>
   </mat-sidenav-container>
