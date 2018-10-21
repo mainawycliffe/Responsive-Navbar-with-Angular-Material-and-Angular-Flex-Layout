@@ -1,14 +1,5 @@
-# Responsive-Navbar-with-Angular-Material-and-Angular-Flex-Layout
-Responsive Navbar with Angular Material and Angular Flex Layout.
+#Responsive Navbar with Angular Material and Angular Flex Layout.
 
-Clone this repo:
+The demo for this repo can be found (here)[https://mainawycliffe.github.io/Responsive-Navbar-with-Angular-Material-and-Angular-Flex-Layout/]
 
-https://github.com/MainaWycliffe/Responsive-Navbar-with-Angular-Material-and-Angular-Flex-Layout.git
-
-#Then run: 
-yarn install or npm install
-
-#Then run the demo:
-ng s or ng serve
-
-Find the full explanation of this demo here https://theinfogrid.com/tech/developers/angular/responsive-navbar-angular-flex-layout/
+Find the full explanation of this demo (here)[https://theinfogrid.com/tech/developers/angular/responsive-navbar-angular-flex-layout/]
