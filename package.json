@@ -27,7 +27,6 @@
     "core-js": "^2.4.1",
     "rxjs": "^6.2.0",
     "rxjs-compat": "^6.0.0-rc.0",
-    "wijmo": "5.20183.550",
     "zone.js": "^0.8.26"
   },
   "devDependencies": {
